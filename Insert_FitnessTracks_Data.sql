@@ -1,0 +1,205 @@
+--DELETE FROM dbo.TrackExercises;
+--DELETE FROM dbo.FitnessTracks;
+--DELETE FROM dbo.Clients;
+--DELETE FROM dbo.CategoryTracks;
+--DELETE FROM dbo.CategoryExercises;
+--DBCC CHECKIDENT ('CategoryExercises', RESEED, 0);
+--
+--DELETE FROM FitnessExercises;
+--DBCC CHECKIDENT ('FitnessExercises', RESEED, 0);
+--
+--DELETE FROM dbo.CategoryFitnesses;
+--DBCC CHECKIDENT ('CategoryFitnesses', RESEED, 0);
+
+
+--הכנסת לקוחות דרך הswager
+--
+--{
+--  "name": "אורי כהן",
+--  "age": 13,
+--  "phoneNumber": "123456",  // זו הסיסמה שלך
+--  "mail": "uri@example.com",
+--  "status": true
+--}
+--{
+--  "name": "דניאל ברק",
+--  "age": 15,
+--  "phoneNumber": "daniel456",
+--  "mail": "daniel@example.com",
+--  "status": true
+--}
+--{
+--  "name": "רוני לוי",
+--  "age": 12,
+--  "phoneNumber": "roni123",
+--  "mail": "roni@example.com",
+--  "status": true
+--}
+--{
+--  "name": "נועה שחר",
+--  "age": 10,
+--  "phoneNumber": "noa789",
+--  "mail": "noa@example.com",
+--  "status": true
+--}
+----הוספת תרגילים
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצת שמחה', N'קפוץ במקום בידיים למעלה, כאילו אתה חוגג בשמחה.', '/gifs/1.png', 6, 8, 6);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'נפנופי ידיים', N'עמוד זקוף ונפנף ידיים מצד לצד בקצב אחיד.', '/gifs/2.png', 4, 7, 9);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצה במקום', N'קפוץ קלות במקום תוך שמירה על שיווי משקל.', '/gifs/3.png', 5, 5, 11);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'הרמת רגל', N'הרם רגל אחת קדימה ושמור על שיווי משקל, חזור ברגל השנייה.', '/gifs/4.png', 6, 4, 14);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'עמידת סמוך', N'שכב על הרצפה, הרם את הגוף על הידיים והישאר בתנוחה.', '/gifs/5.png', 8, 2, 16);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'הרמת ידיים', N'הרם את שתי הידיים למעלה והורד אותן באיטיות.', '/gifs/6.png', 7, 2, 18);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'צעידה במקום', N'צעוד במקום תוך הרמת הברכיים גבוה.', '/gifs/7.png', 6, 4, 25);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'ברכת שלום', N'נופף יד אחת קדימה בתנועה של שלום.', '/gifs/8.png', 6, 7, 6);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'מתיחה לצדדים', N'עמוד ישר ונטה את הגוף לצד ימין ואז לצד שמאל.', '/gifs/9.png', 7, 2, 9);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'משחק בכדור', N'דמיין שאתה בועט כדור קדימה בקצב אחיד.', '/gifs/10.png', 7, 6, 11);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'בעיטה אחורית', N'בעט אחורה ברגל אחת ושמור על יציבות.', '/gifs/11.png', 7, 4, 14);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'בעיטה צדית', N'בעט הצידה ברגל אחת ונסה לשמור על שיווי משקל.', '/gifs/12.png', 8, 3, 16);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'ריצה קלה', N'רוץ במקום בקצב נעים ואחיד.', '/gifs/13.png', 8, 4, 18);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'בעיטת כדור', N'בעט כדור דמיוני קדימה עם כל רגל לסירוגין.', '/gifs/14.png', 6, 7, 25);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'כדרור מהיר', N'כדרר דמיונית כדור סביבך במהירות.', '/gifs/15.png', 6, 3, 6);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'כדרור לצד', N'כדרר דמיונית כדור ותנוע איתו לצד ימין ושמאל.', '/gifs/16.png', 7, 6, 9);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'הטבעת כדור', N'קפוץ ודמיין שאתה מטביע כדור לתוך סל.', '/gifs/17.png', 2, 5, 11);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצה לסל', N'קפוץ ודמיין זריקת כדור לסל בגובה.', '/gifs/18.png', 3, 4, 14);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'הטלה לשער', N'הטלה דמיונית של כדור אל עבר שער.', '/gifs/19.png', 3, 5, 16);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצה באוויר', N'קפוץ לשמים ופרוס ידיים ורגליים.', '/gifs/20.png', 4, 7, 18);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'ישיבה והתבוננות', N'שב בנוחות והביט סביבך ברוגע.', '/gifs/21.png', 4, 5, 25);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'ניסיון בעיטה', N'הרם רגל קדימה ובעט קדימה באוויר.', '/gifs/22.png', 8, 2, 6);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצה עם כדור', N'קפוץ ודמיין שאתה מחזיק כדור בשתי ידיים.', '/gifs/23.png', 5, 7, 9);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'התמתחות', N'הרם ידיים למעלה ומתח את כל הגוף.', '/gifs/24.png', 5, 5, 11);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'עמידת ניתור', N'בצע ניתור קל מהמקום תוך שמירה על תנוחת עמידה.', '/gifs/25.png', 8, 6, 14);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'עמידת ידיים', N'עמוד על הידיים והחזק למשך מספר שניות.', '/gifs/26.png', 6, 7, 16);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'שכיבה על הבטן', N'שכב על הבטן והרם את הראש והידיים מעט.', '/gifs/27.png', 7, 4, 18);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'ניסיון קפיצה', N'כופף את הרגליים וקפוץ קדימה באוויר.', '/gifs/28.png', 3, 3, 25);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'משחק בכדור', N'דמיין שאתה בועט כדור קדימה בקצב אחיד.', '/gifs/29.png', 4, 4, 6);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'כיפוף רגליים', N'כופף את הברכיים כאילו אתה מתיישב וחזור לעמידה.', '/gifs/30.png', 5, 2, 9);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'לחיצת קיר', N'דחוף דמיונית קיר עם הידיים קדימה.', '/gifs/31.png', 6, 3, 11);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'היפוך גוף', N'סובב את הגוף מצד לצד תוך שמירה על יציבות.', '/gifs/32.png', 6, 3, 14);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצת גובה', N'קפוץ לגובה הגבוה ביותר שאתה יכול.', '/gifs/33.png',4, 8, 16);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצת שיווי משקל', N'קפוץ על רגל אחת ושמור על שיווי משקל.', '/gifs/34.png', 8, 2, 18);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'קפיצה בחבל', N'דמיין שאתה קופץ חבל בקצב קבוע.', '/gifs/35.png', 5, 6, 25);
+--
+--INSERT INTO FitnessExercises (Name, Description, Gif, Duration, StartingAge, EndingAge)
+--VALUES (N'ניתור קל', N'בצע ניתורים קטנים ורכים מהמקום.', '/gifs/36.png', 3, 8, 6);
+--
+--UPDATE FitnessExercises
+--SET 
+--    Description = N'עמוד ישר ונטה את הגוף לצד ימין ואז לצד שמאל.',
+--    Duration = 7
+--WHERE Gif = '/gifs/9.png';
+
+-- --הכנסת קטגוריות
+--INSERT INTO CategoryFitnesses (Name) VALUES (N'קואורדינציה');
+--INSERT INTO CategoryFitnesses (Name) VALUES (N'שיווי משקל');
+--INSERT INTO CategoryFitnesses (Name) VALUES (N'כוח');
+--INSERT INTO CategoryFitnesses (Name) VALUES (N'סיבולת');
+--INSERT INTO CategoryFitnesses (Name) VALUES (N'גמישות');
+--INSERT INTO CategoryFitnesses (Name) VALUES (N'זריזות');
+--
+-- שיוך תרגילים לקטגוריות
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (1, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (2, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (3, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (4, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (5, 3);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (6, 3);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (7, 4);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (8, 4);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (9, 5);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (10, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (11, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (12, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (13, 4);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (14, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (15, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (16, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (17, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (18, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (19, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (20, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (21, 5);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (22, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (23, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (24, 5);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (25, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (26, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (27, 5);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (28, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (29, 6);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (30, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (31, 3);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (32, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (33, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (34, 2);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (35, 1);
+--INSERT INTO CategoryExercises (FitnessExerciseId, CategoryId) VALUES (36, 1);
+
