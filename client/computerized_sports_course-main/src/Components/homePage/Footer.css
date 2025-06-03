@@ -1,0 +1,23 @@
+/* === Footer.css === */
+.contact-section {
+    text-align: center;
+    padding: 3rem 1rem;
+    z-index: 1;
+  }
+  
+  .contact-title {
+    color: #6a1b9a;
+  }
+  
+  .contact-subtitle {
+    margin-bottom: 1rem;
+    color: #555;
+  }
+  
+  .contact-button {
+    background-color: #ab47bc !important;
+    color: #fff !important;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    font-size: 1rem;
+  }

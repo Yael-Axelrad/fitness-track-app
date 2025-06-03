@@ -1,0 +1,56 @@
+/* === AdsSection.css === */
+
+.ads-section {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 4rem 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    margin-top: -112px;
+  }
+  
+  .ad-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+    flex-wrap: wrap;
+  }
+  
+  .ad-row.reverse {
+    flex-direction: row-reverse;
+  }
+  
+  .ad-row img {
+    width: 280px;
+    max-width: 100%;
+    border-radius: 16px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  }
+  
+  .ad-text {
+    flex: 1;
+    text-align: right;
+  }
+  
+  .ad-text h3 {
+    color: #6a1b9a;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+  }
+  
+  .ad-text p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .ad-button {
+    background-color: #ec407a !important;
+    color: white !important;
+    border-radius: 30px;
+    padding: 0.5rem 2rem;
+    font-weight: bold;
+  }
+  

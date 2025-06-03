@@ -1,0 +1,49 @@
+/* === homePage.css (כללי) === */
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+    font-family: "Varela Round", sans-serif;
+    background-color: #fff;
+    place-content: center;
+  }
+  
+  .landing-wrapper {
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    animation: fadeIn 1.2s ease;
+  }
+  
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    opacity: 0.4;
+    z-index: 0;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  .deco-pink { background-color: #ff80ab; top: 40px; left: 20px; }
+  .deco-mint { background-color: #69f0ae; bottom: 80px; right: 20px; }
+  .deco-yellow { background-color: #ffd54f; top: 120px; right: 60px; }
+  .deco-sky { background-color: #82b1ff; bottom: 40px; left: 60px; }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  

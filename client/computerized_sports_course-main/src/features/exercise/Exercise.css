@@ -1,0 +1,225 @@
+
+.exercise-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: calc(100vh - 150px);
+    padding: 3rem 4rem;
+    gap: 4rem;
+    flex-wrap: wrap;
+    margin-top: -16px;
+  }
+  
+  .exercise-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    position: relative;
+  }
+  
+  .exercise-gif {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+    border-radius: 30px;
+    box-shadow: 0 10px 40px rgba(255, 235, 59, 0.4);
+    background-color: #fffde7;
+  }
+  
+  .exercise-next-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  
+  
+  .exercise-timer-box {
+    background-color: #ffe0f0;
+    color: #e91e63;
+    padding: 0.7rem 1.5rem;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    box-shadow: 0 6px 18px rgba(255, 193, 7, 0.3);
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-top: 28px;
+    margin-right: -210px;}
+  
+  .exercise-timer-box img {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+  }
+  
+  .exercise-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    margin-top: -32px;
+  }
+  
+  .exercise-title {
+    font-size: 2.5rem;
+    color: #e91e63;
+    font-weight: bold;
+  }
+  
+.exercise-description-title {
+    font-size: 1.2rem;
+    color: #e91e63;
+    margin-bottom: -31px;
+    margin-top: -33px;
+    font-weight: 600;
+  }
+  
+  .exercise-description {
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+    line-height: 1.6;
+    text-align: right;
+  }
+  
+  .exercise-score-section {
+    background-color: #fff9c4;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(255, 193, 7, 0.3);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    width: 100%;
+    max-width: 350px;
+    margin-top: -38px;
+  }
+  
+  .exercise-score-label {
+    color: #e91e63;
+    font-weight: 600;
+    margin-bottom: 0.2rem;
+    font-size: 1rem;
+    text-align: right;
+    width: 100%;
+  }
+  
+  .exercise-score-input {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #f8bbd0;
+    background-color: #fffde7;
+    transition: 0.3s;
+  
+    direction: ltr;
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+  
+    color: #f20053; /* ✅ כאן זה העדכון החשוב */
+  }
+  
+  .exercise-score-input:focus {
+    outline: none;
+    border-color: #f06292;
+  }
+  
+    
+.bbb{
+    width: 85px;
+    height: 68px;
+}
+.sss{
+    margin-top: 24px;
+}  
+.exercise-next-button
+element.style {
+}
+<style>
+.exercise-next-button {
+    background: #ffef74;
+    color: #888;
+    cursor: not-allowed;
+    margin-top: -96px;
+    margin-right: 148px;
+    padding-inline: 17px;
+    padding-bottom: -23px;
+    color: #f20053;
+    display: flex
+;
+}
+.exercise-next-button {
+    background: #ffef74;
+    color: #888;
+    cursor: not-allowed;
+    margin-top: -96px;
+    margin-right: 148px;
+    padding-inline: 17px;
+    padding-bottom: -23px;
+    color: #f20053;
+    display: flex
+;
+}
+  
+.score-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  
+  .exercise-score-label {
+    color: #e91e63;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 0.2rem;
+    text-align: right;
+    width: 100%;
+  }
+  .score-inputs{
+color: #f20053;
+  }
+  .total-score-display {
+    margin-top: 1rem;
+    text-align: center;
+    border: none;
+    background: transparent;
+    color: #e91e63;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .exercise-score-input {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1rem;
+    text-align: center;
+    border-radius: 12px;
+    border: 2px solid #f8bbd0;
+    background-color: #fffde7;
+    transition: 0.3s;
+  
+    /* הוסיפי את אלה 👇 */
+    direction: ltr;
+    appearance: auto;
+    -webkit-appearance: auto;
+    -moz-appearance: auto;
+  }
+  

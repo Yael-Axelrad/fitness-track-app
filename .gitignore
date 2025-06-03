@@ -1,8 +1,29 @@
-echo node_modules/ > .gitignore
-echo bin/ >> .gitignore
-echo obj/ >> .gitignore
-echo .vs/ >> .gitignore
-echo .vscode/ >> .gitignore
-echo .env >> .gitignore
-echo computerized_sports_course-main/ >> .gitignore
-echo computerized_sports_course_server1/ >> .gitignore
+# === Node ===
+node_modules/
+dist/
+.vite/
+
+# === React build ===
+build/
+.env
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# === Visual Studio ===
+.vs/
+.vscode/
+*.user
+*.suo
+*.dbmdl
+*.DotSettings.user
+
+# === Build output ===
+bin/
+obj/
+
+# === System files ===
+.DS_Store
+Thumbs.db

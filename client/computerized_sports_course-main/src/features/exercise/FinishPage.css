@@ -1,0 +1,117 @@
+.finish-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    height: 100vh;
+    overflow: hidden;
+    padding: 2rem;
+  }
+  
+  /* רקעים צבעוניים */
+  .circle {
+    position: absolute;
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    opacity: 0.3;
+    z-index: 0;
+    animation: float 6s ease-in-out infinite;
+  }
+  
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+  }
+  
+  .deco-pink { background-color: #ff80ab; top: 40px; left: 20px; }
+  .deco-mint { background-color: #69f0ae; bottom: 80px; right: 20px; }
+  .deco-yellow { background-color: #ffd54f; top: 120px; right: 60px; }
+  .deco-sky { background-color: #82b1ff; bottom: 40px; left: 60px; }
+  
+  /* כרטיס */
+  .finish-card {
+    background: #fffef9;
+    padding: 3rem;
+    border-radius: 30px;
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 500px;
+    width: 100%;
+    position: relative;
+    z-index: 2;
+    animation: fadeUp 1s ease;
+  }
+  
+  @keyframes fadeUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  .finish-gif {
+    width: 350px;
+    margin-bottom: 1.5rem;
+    animation: bounce 2s infinite;
+  }
+  
+  @keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+  
+  .finish-title {
+    font-size: 2.5rem;
+    color: #ec407a;
+    margin-bottom: 1rem;
+  }
+  
+  .finish-message {
+    font-size: 1.1rem;
+    color: #444;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }
+  
+  .finish-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  
+  .finish-btn {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .finish-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  .finish-btn.yellow {
+    background-color: #fff176;
+    color: #000;
+  }
+  
+  .finish-btn.pink {
+    background-color: #f48fb1;
+    color: #6a1b9a;
+  }
+  
+  .confetti-bg {
+    position: absolute;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 180px;
+    opacity: 0.8;
+    pointer-events: none;
+  }
+  

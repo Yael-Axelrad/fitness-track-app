@@ -1,0 +1,39 @@
+/* === ClassesSection.css === */
+.classes-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 9rem;
+    z-index: 1;
+    margin-top: -59px;
+  }
+  
+  .class-card {
+    width: 280px;
+    border-radius: 20px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    color: #fff;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+    z-index: 1;
+  }
+  
+  .class-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+  }
+  
+  .class-card .card-title {
+    margin-top: 1rem;
+  }
+  
+  .class-card .card-desc {
+    margin-top: 0.5rem;
+  }
+  
+  .class-card.pink { background-color: #ff80ab; }
+  .class-card.mint { background-color: #69f0ae; }
+  .class-card.sky { background-color: #82b1ff; }
+  .class-card.yellow { background-color: #ffd54f; color: #333; }
