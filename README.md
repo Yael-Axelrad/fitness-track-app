@@ -61,6 +61,13 @@ npm run dev
 ![Home Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214239.png)
 ![Home Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214252.png)
 
+### Login Page
+![Login](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214322.png)
+
+###About Us
+![About Us 1](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214346.png)
+![About Us 2](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214357.png)
+
 
 ### Track History
 ![Track History](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214804.png)
@@ -72,8 +79,6 @@ npm run dev
 ### Summary Page
 ![Summary Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214559.png)
 
-### Login Page
-![Login](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214322.png)
 
 
 
