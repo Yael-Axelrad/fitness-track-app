@@ -68,13 +68,12 @@ npm run dev
 ![About Us 1](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214346.png)
 ![About Us 2](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214357.png)
 
-
-### Track History
-![Track History](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214804.png)
-
 ### Exercise Page
 ![Exercise Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214447.png)
 ![Exercise Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214502.png)
+
+### Track History
+![Track History](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214804.png)
 
 ### Summary Page
 ![Summary Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214559.png)
