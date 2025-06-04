@@ -48,7 +48,7 @@ Edit
 2. Run the project  
 
 ### 🌐 Frontend
-```bash
+
 cd client
 npm install
 npm run dev
@@ -57,18 +57,23 @@ npm run dev
 
 ### Home Page
 ![Home Page](Screenshots/HomePage.png)
+![Home Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214225.png)
+![Home Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214239.png)
+![Home Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214252.png)
+
 
 ### Track History
-![Track History](./client/public/screenshots/214804.png)
+![Track History](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214804.png)
 
 ### Exercise Page
-![Exercise Page](./client/public/screenshots/214502.png)
+![Exercise Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214447.png)
+![Exercise Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214502.png)
 
 ### Summary Page
-![Summary Page](./client/public/screenshots/214559.png)
+![Summary Page](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214559.png)
 
 ### Login Page
-![Login](./client/public/screenshots/214824.png)
+![Login](Screenshots/%D7%A6%D7%99%D7%9C%D7%95%D7%9D%20%D7%9E%D7%A1%D7%9A%202025-06-03%20214322.png)
 
 
 
