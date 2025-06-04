@@ -56,7 +56,7 @@ npm run dev
 ## 🖼 Screenshots
 
 ### Home Page
-![Home Page](./client/public/screenshots/HomePage.png)
+![Home Page](Screenshots/HomePage.png)
 
 ### Track History
 ![Track History](./client/public/screenshots/214804.png)
